@@ -3,11 +3,11 @@ var express = require("express");
 
 var server = express();
 
-server.get("/",(req,res,next)=>{
+server.get("/", (req, res, next) => {
     console.log("someone else");
     res.send("menu: what do you want? food or water?");
 })
 
-server.listen(PORT, ()=>{
+server.listen(PORT, () => {
     console.log("server is runnig on 3000 port")
 })
