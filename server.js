@@ -8,6 +8,16 @@ server.get("/", (req, res, next) => {
     res.send("menu: what do you want? food or water?");
 })
 
+server.get("/food", (req, res, next) => {
+    console.log("Someone is asking for food");
+    res.send("Here is water");
+})
+
+server.get("/water", (req, res, next) => {
+    console.log("Someone is asking for water");
+    res.send("Here is water");
+})
+
 server.listen(PORT, () => {
-    console.log("server is runnig on 3000 port")
+    console.log("server is runnig on port", PORT)
 })
